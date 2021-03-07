@@ -1,0 +1,125 @@
+/* main */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px; 
+}
+
+body{
+    background-color: black;
+}
+#headNStart{
+    border: 1px solid rgb(161, 154, 154);
+    background-color: gray;
+    height: 60px;
+    width: 1124px;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 12px;
+    margin-left: 105px;
+    color: rgb(134, 3, 241);
+}
+#flexMain{
+    display: flex;
+    width: 1126px;
+    margin-left: 105px;
+    margin-top: 7px;
+    height: 560px;
+}
+
+                                                      /*infoScreen*/
+
+#infoScreen{
+    border: 1px solid rgb(129, 123, 123);
+    background-color: rgb(83, 82, 82);
+    width: 224px;
+    
+}
+.infoDives{
+    height: 65px;
+    margin-top: 6px;
+}
+.infoheads{
+    font-size: 19px;
+    margin-left:10px ;
+    color: rgb(17, 206, 253);
+}
+.info{
+    font-size: 27px;
+    color: aliceblue;
+    margin-left:10px ;
+    padding-top: 10px;
+}
+#highScores{
+    height: 50px;
+}
+
+#highScoresUl{
+    list-style-type: none;
+    padding-left: 5px;
+    padding-bottom: 0px;
+}
+.highScoresLi{
+    cursor: pointer;
+    padding-top: 4px;
+    font-size: 22px;
+    position:relative
+    
+}
+.popGrup{
+    color: rgb(251, 255, 0);
+    position: absolute;
+        top: -5px;
+        right: 10px;
+    background-color: rgba(29, 27, 27, 0.342);
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+.namestHS{
+    font-size: 85%;
+    color: rgb(253, 17, 127)    
+}
+                                                 /*game screen*/
+
+#gameScreen{
+    border: 2px solid rgb(255, 130, 207);
+    margin-left: 10px;
+    width: 910px;
+    position: relative;
+    background-image:url("../images/img3.jpg");
+    background-size: cover;
+    cursor: grab;
+}
+@keyframes rotateDiv {
+    0%     {transform: rotate(0deg);}
+    10%    {transform: rotate(36deg);} 
+    20%    {transform: rotate(72deg);}
+    30%    {transform: rotate(108deg);}
+    40%    {transform: rotate(144deg);}
+    50%    {transform: rotate(180deg);}
+    60%    {transform: rotate(216deg);}
+    70%    {transform: rotate(252deg);}
+    80%    {transform: rotate(288deg);}
+    90%    {transform: rotate(324deg);}
+    100%   {transform: rotate(360deg);}
+}
+#catchDiv{                                        /* the spinning div*/
+    font-size: 15px;
+    color: rgb(17, 16, 16);
+    display: inline-block;
+    border: 2px solid rgb(255, 1, 242);
+    background-color: rgb(128, 195, 255);
+    height: 20px;
+    width: 110px;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 5px;
+    position: absolute;                  /* animation to this div */
+       top: 5px;
+       right: 5px;
+    animation-name: rotateDiv;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+}
+
